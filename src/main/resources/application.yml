@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    include: secrets
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
+custom:
+  email:
+    from_email: "SECRET"
+    access_key: "SECRET"
+    secret_key: "SECRET"
