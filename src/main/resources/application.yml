@@ -9,6 +9,9 @@ springdoc:
     enabled: true
 
 custom:
+  sns:
+    access_key: "SECRET"
+    secret_key: "SECRET"
   email:
     from_email: "SECRET"
     access_key: "SECRET"

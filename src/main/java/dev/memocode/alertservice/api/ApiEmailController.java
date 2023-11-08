@@ -1,7 +1,7 @@
 package dev.memocode.alertservice.api;
 
 import dev.memocode.alertservice.api.form.SendEmailForm;
-import dev.memocode.alertservice.email.EmailUseCase;
+import dev.memocode.alertservice.email.usecase.EmailUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

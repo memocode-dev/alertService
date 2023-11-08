@@ -1,8 +1,8 @@
-package dev.memocode.alertservice.email.impl;
+package dev.memocode.alertservice.email.usecase.impl;
 
 import com.amazonaws.services.simpleemail.AmazonSimpleEmailService;
 import com.amazonaws.services.simpleemail.model.*;
-import dev.memocode.alertservice.email.EmailUseCase;
+import dev.memocode.alertservice.email.usecase.EmailUseCase;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,6 +19,7 @@ public class EmailUseCaseImpl implements EmailUseCase {
     private final AmazonSimpleEmailService sesClient;
 
     public void sendCode(String email, String title, String content) {
+
         // 제목
         Content subject = new Content().withCharset("UTF-8").withData(title);
 
